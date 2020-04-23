@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%
 }
 
 h1, h2, h3, h4, h5, h6, a {
@@ -40,11 +41,44 @@ nav {
     color: #2D46B9 !important;
 }
 
+#nav-line {
+    height: 10px !important;
+}
+
 /******************** TELA INICIAL ************/
 .back-inicial {
     position: absolute;
     top: 0;
-    height: 1000px;
-    background-color: aqua;
+    height: 100%;
     width: 100%;
+    background-color: #400400;
+    padding: 0 !important;
+    z-index: -1;
+}
+
+.back-wow {
+    height: 100%;
+    background-image: url('../img/wow-pic.png');
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 0;
+    margin-left: 60%;
+    z-index: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    padding-top: 30%;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1;
+}
+
+.texto-premium {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
 }
