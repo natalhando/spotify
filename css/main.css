@@ -43,7 +43,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: #2D46B9 !important;
+    color: #1DB954 !important;
     text-shadow: 1px 1px 2px #333333;
 }
 
@@ -53,7 +53,7 @@ nav {
 }
 
 .btn-perfil:hover .svg-perfil, .btn-perfil:hover .dropdown-toggle {
-    fill: #2D46B9;
+    fill: #1DB954;
     text-shadow: 1px 1px 2px #333333;
 }
 
@@ -62,13 +62,13 @@ nav {
 }
 
 .dropdown-item:hover {
-    color: #2D46B9 !important;
+    color: #1DB954 !important;
 }
 
 /******************** TELA INICIAL ************/
 
-.back-red {
-    background-color:#400400;
+.back-grey {
+    background-color: #E0E0E0;
     width: 100%;
     height: 700px;
 }
@@ -107,6 +107,16 @@ nav {
     background-color: #1ED55F;
 }
 
+.feito-por, .feito-por span {
+    font-size: 12px;
+    margin-top: 150px;
+    text-shadow: 1px 1px 2px #888888;
+}
+
+.feito-por span {
+    text-decoration: underline;
+}
+
 .carousel {
     z-index: 0;
 }
@@ -118,6 +128,7 @@ nav {
 
 .back-ace {
     height: 100%;
+    max-height: 700px;
     width: 50%;
     margin-left: 50%;
     background-repeat: no-repeat;
@@ -125,23 +136,23 @@ nav {
 }
 
 .img-wow {
-    background-image: url('../img/wow-pic.png');
+    background-image: url('../img/wow.png');
 }
 
 .img-jun {
-    background-image: url('../img/jun-pic.png');
+    background-image: url('../img/jun.png');
 }
 
 .img-bk {
-    background-image: url('../img/bk-pic.png');
+    background-image: url('../img/bk.png');
 }
 
 .img-chan {
-    background-image: url('../img/chan-pic.png');
+    background-image: url('../img/chan.png');
 }
 
 .img-dong {
-    background-image: url('../img/dong-pic.png');
+    background-image: url('../img/dong.png');
 }
 
 /******************** TELA MUSICAS ************/
@@ -187,12 +198,20 @@ nav {
 
 .musica {
     cursor: pointer;
-    background-color: blueviolet;
     margin: 10px;
     max-width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 365px;
     box-shadow: 1px 1px 10px #CCCCCC;
+    padding: 0 !important;
     z-index: 0;
+}
+
+.mus {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .mus1 {
@@ -224,6 +243,8 @@ nav {
     width: 100%;
     position: absolute;
     left: 0; top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .oculto:hover {
@@ -250,6 +271,16 @@ nav {
     font-family: 'Tajawal', sans-serif;
     font-weight: bold;
     font-size: 35px;
+}
+
+@media screen and (max-width:990px) {
+    .nome-musica {
+        font-size: 25px;
+    }
+
+    .nome-artista {
+        font-size: 15px;
+    }
 }
 
 .nome-artista {
