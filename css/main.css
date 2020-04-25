@@ -19,6 +19,10 @@ nav {
     z-index: 2;
 }
 
+.navbar-nav {
+    padding-right: 200px;
+}
+
 .nav-link {
     height: 100% !important;
 }
@@ -40,10 +44,25 @@ nav {
 
 .nav-link:hover {
     color: #2D46B9 !important;
+    text-shadow: 1px 1px 2px #333333;
 }
 
-#nav-line {
-    height: 10px !important;
+.btn-perfil {
+    padding-left: 50px;
+    vertical-align: middle;
+}
+
+.btn-perfil:hover .svg-perfil, .btn-perfil:hover .dropdown-toggle {
+    fill: #2D46B9;
+    text-shadow: 1px 1px 2px #333333;
+}
+
+.svg-perfil {
+    padding-right: 10px;
+}
+
+.dropdown-item:hover {
+    color: #2D46B9 !important;
 }
 
 /******************** TELA INICIAL ************/
@@ -130,7 +149,6 @@ nav {
 .back-white {
     background-color:#FFFFFF;
     width: 100%;
-    height: 700px;
 }
 
 .intro-musica {
@@ -171,8 +189,9 @@ nav {
     cursor: pointer;
     background-color: blueviolet;
     margin: 10px;
-    width: 350px;
+    max-width: 350px;
     height: 350px;
+    box-shadow: 1px 1px 10px #CCCCCC;
     z-index: 0;
 }
 
@@ -243,5 +262,41 @@ nav {
     text-transform: uppercase;
     color: #1ED55F;
     font-family: 'Tajawal', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.musicas {
+    margin-bottom: 100px;
+}
+
+/******************** RODAPE ************/
+
+.rodape {
+    background-color: #000000;
+    width: 100%;
+    height: 200px;
+}
+
+.info-rodape {
+    padding: 80px 200px 0 20px;
+}
+
+.btn-link {
+    margin-right: 10px;
+    display: block;
+    background-color: #222326;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.svg-link {
+    position: relative;
+    top: 10px;
+}
+
+.btn-link:hover .svg-link {
+    fill: #1DB954;
 }
