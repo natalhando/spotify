@@ -5,7 +5,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, a {
-    font-family: Roboto, sans-serif;
+    font-family: 'Francois One', sans-serif;
     font-weight: bold;
 }
 
@@ -16,7 +16,7 @@ nav {
     top: 0;
     background-color: rgba(0,0,0,0.7) !important;
     height: 80px !important;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-link {
@@ -27,13 +27,14 @@ nav {
     position: relative;
     top: 50%;
     margin-top: -25px !important;
-    padding-left: 70px !important;
+    padding-left: 200px !important;
     height: 40px !important;
 }
 
 .nav-link {
     color: #ffffff !important;
     font-size: 15px;
+    font-family: Roboto, sans-serif;
     margin-right: 20px;
 }
 
@@ -46,39 +47,201 @@ nav {
 }
 
 /******************** TELA INICIAL ************/
-.back-inicial {
-    position: absolute;
-    top: 0;
-    height: 100%;
+
+.back-red {
+    background-color:#400400;
     width: 100%;
-    background-color: #400400;
-    padding: 0 !important;
-    z-index: -1;
+    height: 700px;
 }
 
-.back-wow {
-    height: 100%;
-    background-image: url('../img/wow-pic.png');
-    background-repeat: no-repeat;
-    position: relative;
-    bottom: 0;
-    margin-left: 60%;
+.conteudo-fixo {
+    text-align: center;
+    vertical-align: middle;
+    top: 40% !important;
+}
+
+.txt-premium {
+    font-size: 70px;
+    color: #FFFFFF;
+}
+
+.btn-redondo {
+    border-radius: 500px;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.btn-premium {
+    width: 350px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #1DB954;
+    color: #ffffff;
+    border-width: 0;
+}
+
+.btn-premium:hover {
+    transition-property: all;
+    transition-duration: 0.8s;
+    background-color: #1ED55F;
+}
+
+.carousel {
     z-index: 0;
 }
 
-.container {
+.conteudo {
+    width: 100%;
+    height: 700px;
+}
+
+.back-ace {
+    height: 100%;
+    width: 50%;
+    margin-left: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.img-wow {
+    background-image: url('../img/wow-pic.png');
+}
+
+.img-jun {
+    background-image: url('../img/jun-pic.png');
+}
+
+.img-bk {
+    background-image: url('../img/bk-pic.png');
+}
+
+.img-chan {
+    background-image: url('../img/chan-pic.png');
+}
+
+.img-dong {
+    background-image: url('../img/dong-pic.png');
+}
+
+/******************** TELA MUSICAS ************/
+
+.back-white {
+    background-color:#FFFFFF;
+    width: 100%;
+    height: 700px;
+}
+
+.intro-musica {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.txt-musica {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.txt-descricao {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-player {
+    width: 300px;
+    height: 50px;
+    border-width: 2px;
+    border-color: #616467;
+    color: #616467;
+    background-color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+.btn-player:hover {
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: #616467;
+    color: #FFFFFF;
+    border-width: 0;
+}
+
+.musica {
+    cursor: pointer;
+    background-color: blueviolet;
+    margin: 10px;
+    width: 350px;
+    height: 350px;
+    z-index: 0;
+}
+
+.mus1 {
+    background-image: url('../img/imagem1.jpg');
+}
+
+.mus2 {
+    background-image: url('../img/imagem2.jpg');
+}
+
+.mus3 {
+    background-image: url('../img/imagem3.jpg');
+}
+
+.mus4 {
+    background-image: url('../img/imagem4.jpg');
+}
+
+.mus5 {
+    background-image: url('../img/imagem5.jpg');
+}
+
+.mus6 {
+    background-image: url('../img/imagem6.jpg');
+}
+
+.oculto {
+    height: 100%;
+    width: 100%;
     position: absolute;
-    top: 0;
+    left: 0; top: 0;
+}
+
+.oculto:hover {
+    transition-property: all;
+    transition-duration: 0.2s;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.btn-musica {
     padding-top: 30%;
-    width: 100% !important;
-    height: 100% !important;
+    display: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
     z-index: 1;
 }
 
-.texto-premium {
-    font-size: 80px;
+.oculto:hover .btn-musica {
+    display: block;
+}
+
+.nome-musica {
+    color: #FFFFFF;
+    font-family: 'Tajawal', sans-serif;
     font-weight: bold;
-    text-align: center;
-    width: 100%;
-    color: #ffffff;
+    font-size: 35px;
+}
+
+.nome-artista {
+    color: #919496;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.escute-agora {
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #1ED55F;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
 }
