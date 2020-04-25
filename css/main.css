@@ -9,21 +9,22 @@ h1, h2, h3, h4, h5, h6, a {
     font-weight: bold;
 }
 
-/***************** NAVBAR ***************/
-nav {
-    position: fixed !important;
+/***************** NAVBAR DESKTOP ***************/
+
+nav.nav-desktop {
+    position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(0,0,0,0.7) !important;
-    height: 80px !important;
+    background-color: rgba(0,0,0,0.7);
+    height: 80px;
     z-index: 2;
 }
 
-.navbar-nav {
+nav.nav-desktop .navbar-nav {
     padding-right: 200px;
 }
 
-.nav-link {
+nav.nav-desktop .nav-link {
     height: 100% !important;
 }
 
@@ -35,34 +36,106 @@ nav {
     height: 40px !important;
 }
 
-.nav-link {
+nav.nav-desktop .nav-link {
     color: #ffffff !important;
     font-size: 15px;
     font-family: Roboto, sans-serif;
     margin-right: 20px;
 }
 
-.nav-link:hover {
+nav.nav-desktop .nav-link:hover {
     color: #1DB954 !important;
     text-shadow: 1px 1px 2px #333333;
 }
 
-.btn-perfil {
+nav.nav-desktop .btn-perfil {
     padding-left: 50px;
     vertical-align: middle;
 }
 
-.btn-perfil:hover .svg-perfil, .btn-perfil:hover .dropdown-toggle {
+nav.nav-desktop .btn-perfil:hover .svg-perfil, .btn-perfil:hover .dropdown-toggle {
     fill: #1DB954;
     text-shadow: 1px 1px 2px #333333;
 }
 
-.svg-perfil {
+nav.nav-desktop .svg-perfil {
     padding-right: 10px;
 }
 
-.dropdown-item:hover {
+nav.nav-desktop .dropdown-item:hover {
     color: #1DB954 !important;
+}
+
+nav.nav-mobile {
+    display: none;
+}
+
+.desativado {
+    color: #999999 !important;
+}
+
+
+/***************** NAVBAR MOBILE ***************/
+
+@media screen and (max-width:1050px) {
+    .nav-desktop {
+        /*background-color: #000000 !important;*/
+        display: none !important;
+    }
+
+    nav.nav-mobile {
+        display: block !important;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #000000;
+        height: 60px;
+        z-index: 2;
+    }
+
+    nav.nav-mobile .logomarca {
+        position: relative;
+        top: 50%;
+        margin-top: -5px !important;
+        padding-left: 70px !important;
+        height: 30px !important;
+    }
+
+    .toggler-mobile {
+        color: transparent;
+        border-width: 0;
+    }
+
+    .svg-perfil-mobile:hover {
+        fill: #1DB954 !important;
+    }
+
+    .lado-esquerdo {
+        text-align: right;
+        padding-right: 70px !important;
+    }
+
+    #navbarMobile {
+        background-color: black;
+        width: 100%;
+        width: 50%;
+        margin-left: 50%;
+        text-align: right;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+
+    #navbarMobile .nav-link {
+        padding-top: 10px;
+        color: #ffffff;
+        font-size: 15px;
+        font-family: Roboto, sans-serif;
+        margin-right: 20px;
+    }
+
+    #navbarMobile .nav-link:hover {
+        color: #1DB954 !important;
+    }
 }
 
 /******************** TELA INICIAL ************/
@@ -75,8 +148,8 @@ nav {
 
 .conteudo-fixo {
     text-align: center;
-    vertical-align: middle;
-    top: 40% !important;
+    top: 250px !important;
+    z-index: 1 !important;
 }
 
 .txt-premium {
